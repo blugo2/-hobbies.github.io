@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+	{% load staticfiles %}
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'hobbies/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <title>Hobbies/Interests</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Menu:</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'hobbies' %}">Hobbies/Interests</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+<h1 style="text-align: center;margin-top:3rem;margin-bottom:3rem;">Hobbies</h1>
+<div class="container"> <!-- Container for Rows-->
+  <div class="row"> <!-- Top Row-->
+    <div class="col">	<!--Item One of top row-->
+     <div class="card" style="width: 18rem;"> 	
+  <img src="{% static 'hobbies/img/b_pic.jpg' %}" class="responsive-img" style='max-height:250px;' alt="Board Games with Friends"> 
+  <div class="card-body">
+    <p class="card-text" style="height:10rem";>Strategy games are my absolute favorite genre of games. Shown above are my friends and I playing a game of Scythe. Other board games I love to play are Axis and Allies, Imperitor 2030, and of course Catan!</p>
+	    <div>	<!-- Conatiner for button within item One Top Row -->
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+		  Know more
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Strategy Games!</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<p>When it comes to Stratgey games, I do not limit myself to just board games. Some of my favorite stratgey games are actually video games. These include the following: Hearts of Iron, Sid Mer's Civilization, Infested planet, and many more. </p>
+			  </div>
+
+			</div>
+		  </div>
+		</div>
+	</div>
+  </div>
+</div>
+    </div>
+    <div class="col">	<!--Item two of top row -->
+      <div class="card" style="width: 18rem;"> 	
+  <img src="{% static 'hobbies/img/w_pic.jpg' %}" class="responsive-img" style='max-height:250px;' alt="Board Games with Friends"> 
+  <div class="card-body">
+    <p class="card-text" style="height:10rem;">Yes, that is me shown above. I used to wreslte in highschool and from time to time I like to help teach the students on my fathers wrestling team a thing or two.(He's an assistant wrestling coach for a highschool in FL.</p>
+	    <div>	<!-- Conatiner for button within item Two Top  -->
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+		  Know more
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title">Wrestling</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<p>While I no longer wreslte for any teams, I intend to go to the club wrestling at mason next year every once in a while. I cut weight for all of highschool, I am very much satisfied with simply working out and eating whatever I want, whenever I want!</p>
+			  </div>
+
+			</div>
+		  </div>
+		</div>
+	</div>
+  </div>
+</div>
+    </div>
+    <div class="col">	<!--Item three of top row-->
+      <div class="card" style="width: 18rem;"> 	
+  <img src="{% static 'hobbies/img/bb_pic.jpg' %}" class="responsive-img" style='max-height:250px;' alt="Board Games with Friends"> 
+  <div class="card-body">
+    <p class="card-text" style="height: 10rem;">I am an avid lover of reading, espeically sc fi books!! This is a small sample of my collection. Not shown here include, the Ender's Game, Bean's story, and several others series. </p>
+	<div>	<!-- Conatiner for button within item three -->
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+		  Know more
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">My Books!</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<p>I'm currently reading two series, James S. A. Corey's <i>"The Expanse"</i> and the Hugo award winning classic sci fi series, <i>"Old Mans War"</i> by John Scalzi. The book shown above, Salvation, is very long sc fi book set in the far far future. It was a good read! </p>
+			  </div>
+
+			</div>
+		  </div>
+		</div>
+
+	</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>	<!-- End of container for Row -->
+
+	<div style="float:right;margin-right:22em;">	<!-- Conatiner used for spacing, I know not good practive but on a time crunch here :/ -->
+		<div></div>	<!--Start of divs used for spaceing (Im aware this is a bad way to do it lol) -->
+		<div></div>
+		<div></div>	
+	</div>		<!--End of bad spaceing technique -->
+		
+<div class="jumbotron jumbotron-fluid" style= "background-color: #D3D3D3;">		<!-- Container for Interests -->
+  <div class="container">
+    <h1 style="text-align: center;class="display-4">Interests</h1>
+    <p style="text-align: center;" class="lead"><strong>This is a list of some, but not all of my interests. If I had more time I would make this a seperate page with links leading to items listed below, but I want to get this in to you before the weekend so here is this for now.</strong></p>
+	<div class="row">
+		<div class="col">
+			<ul class="list-group list-group-flush">
+			  <li class="list-group-item"><h4>Technology</h4></li>
+			  <li class="list-group-item">Tesla</li>
+			  <li class="list-group-item">Spacex</li>
+			  <li class="list-group-item">Coding!</li>
+			  <li class="list-group-item">Sc Fi</li>
+			</ul>
+		</div>
+		
+		<div class="col">
+		<ul class="list-group list-group-flush">
+		  <li class="list-group-item"><h4>Politics</h4></li>
+		  <li class="list-group-item">Forigen Affairs</li>
+		  <li class="list-group-item">China</li>
+		  <li class="list-group-item">2020 Elections</li>
+		  <li class="list-group-item">Freakanomics(Podcast)</li>
+		</ul>
+		</div>
+		
+		<div class="col">
+			<ul class="list-group list-group-flush">
+			  <li class="list-group-item"><h4>Entertainment</h4></li>
+			  <li class="list-group-item">YouTube</li>
+			  <li class="list-group-item">Politics</li>
+			  <li class="list-group-item">Joe Rogan (Podcast)</li>
+			  <li class="list-group-item">The Weekend (Artist)</li>
+			</ul>
+		</div>
+		
+		<div class="col">
+			<ul class="list-group list-group-flush">
+			  <li class="list-group-item"><h4>Misc</h4></li>
+			  <li class="list-group-item">Gardening</li>
+			  <li class="list-group-item">Real Estate</li>
+			  <li class="list-group-item">Dogs</li>
+			  <li class="list-group-item">Biking</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+
+  </div>
+</div>
+
+
+<footer align="center" style= "background-color: #303030;"><p style="color:#FFFFFF;">Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
+<p style="color:#FFFFFF;">Last Update on: April 4, 2019</p></footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
