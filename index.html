@@ -20,10 +20,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home </a>
+        <a class="nav-link" href="{% url 'index' %}">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="hobbies.html">Hobbies/Interests</a>
+        <a class="nav-link" href="{% url 'hobbies' %}">Hobbies/Interests</a>
       </li>
     </ul>
   </div>
@@ -35,38 +35,40 @@
   <hr class="my-4">
   <p>If you are looking at this website and thinking, "Man, its kinda bland" you'd be correct! It IS bland. That's because prior to two days ago I knew anothing about Djanog, but YouTube is a wonderul teacher for those willing to learn. The next question you may be asking yourself is "Why'd he make this website in two days?" Well THATS beacause I was asked if I had any additional projects to show for a potential job position and upon realizing that I didn't, I set out to make one.<br><br> The conent I am displaying on this website is information about my hobbies, and interests, if you are here looking for something more professional such as skills and job experince head on over to this website <a href="blugo2.git.io"><strong>My resume website.</strong></a></p></p>
 </div>
-<div style="margin-bottom:40rem";>		<!---Container for all three cards and h4-->
-<div style="margin-bottom:5rem;">		<!---Container for h4-->
-	<h4 style="text-align:center">My logic behind creating this website</h4>
-</div>
-<div class="float-right">		<!---Container for right most card-->
-<div class="card" style="width: 18rem;margin-right:12rem;max-height:20rem;">
-  <div class="card-body">
-    <h5 class="card-title">Diligent</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Hard Working</h6>
-    <p class="card-text"> While this website was not made with Flask, Django is very similar and I am confident the skills I learned to create this website will transfer over quite nicly with Flask. It is my intention to provide the best work I possiably can over the summer with your team. I hope this proves that. </p>
+
+<h4 style="text-align:center; margin-bottom:5rem;">My logic behind creating this website</h4>
+<div class="container" style="margin-bottom:15rem";>	<!-- Container for the Cards -->
+  <div class="row">
+    <div class="col">	<!---Container for right most card-->
+		<div class="card" style="width: 18rem;max-height:20rem;">
+		<div class="card-body">
+		<h5 class="card-title">Diligent</h5>
+		<h6 class="card-subtitle mb-2 text-muted">Hard Working</h6>
+		<p class="card-text"> While this website was not made with Flask, Django is very similar and I am confident the skills I learned to create this website will transfer over quite nicly with Flask. It is my intention to provide the best work I possiably can over the summer with your team. I hope this proves that. </p>
+		</div>
+		</div>
+    </div>
+    <div class="col">	<!---Container for middle card-->
+		<div class="card" style="width: 18rem;max-height:20rem;">
+		<div class="card-body">
+		<h5 class="card-title">Commited</h5>	
+		<h6 class="card-subtitle mb-2 text-muted">Team Oriented</h6>
+		<p class="card-text">I understand that a great team needs great team memebers. It is my understand that two skills all the best teams in the world have are communication, and commitment. What better way to show that I am commited to providing the best work I can with your team then creating this website?</p>
+		</div>
+		</div>
+    </div>
+    <div class="col">	<!---Container for left most card-->    		
+		<div class="card" style="width: 18rem;max-height:20rem;">
+		<div class="card-body">
+		<h5 class="card-title">Adaptive</h5>
+		<h6 class="card-subtitle mb-2 text-muted">Quick Learner</h6>
+		<p class="card-text">When I realized that the competition for this position was high, and you were struggling to decide on which candidates to pick up I knew I need to help you decide. It is my hope that by creating this website with Django while having no prior knoweldge just two days ago shows that I am quick to pick up new skills. </p>
+		</div>
+		</div>
+    </div>
   </div>
 </div>
-</div>
-<div class="float-right">		<!---Container for middle card-->
-<div class="card" style="width: 18rem;margin-left:12rem;margin-right:12em;max-height:20rem; ">
-  <div class="card-body">
-    <h5 class="card-title">Commited</h5>	
-    <h6 class="card-subtitle mb-2 text-muted">Team Oriented</h6>
-    <p class="card-text">I understand that a great team needs great team memebers. It is my understand that two skills all the best teams in the world have are communication, and commitment. What better way to show that I am commited to providing the best work I can with your team then creating this website?</p>
-  </div>
-</div>
-</div>
-<div class="float-right">		<!---Container for left most card-->
-<div class="card" style="width: 18rem; max-height:20rem;">
-  <div class="card-body">
-    <h5 class="card-title">Adaptive</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Quick Learner</h6>
-    <p class="card-text">When I realized that the competition for this position was high, and you were struggling to decide on which candidates to pick up I knew I need to help you decide. It is my hope that by creating this website with Django while having no prior knoweldge just two days ago shows that I am quick to pick up new skills. </p>
-  </div>
-</div>
-</div>
-</div>
+
 
 <footer align="center" style= "background-color: #303030;"><p style="color:#FFFFFF;">Certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use.</p>
 <p style="color:#FFFFFF;">Last Update on: April 4, 2019</p></footer>
